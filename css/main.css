@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+.container{
+    max-width: 1024px;
+}
 
 #keyboard {
     position: absolute;
@@ -11,10 +14,24 @@
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
+    max-width: 1024px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 .letter {
     display: block;
     width: 100px;
+    height: 50px;
 }
+
+
+.space{
+    flex-grow: 1;
+}
+
